@@ -41,15 +41,8 @@ This repository showcases my core technical projects completed during the 6-mont
 
 ---
 
-### 6. 🧽 Data Cleaning Challenge
-**Tools:** Excel, SQL  
-**Skills:** Data validation, deduplication, schema normalization  
-**Summary:** Cleaned and transformed a messy customer dataset to ensure usability for accurate reporting, segmentation, and customer journey analysis.
-
----
-
-### 7. 📈 Final Project: Sales Dashboard
-**Tools:** Tableau (PDF Summary: `Final Project Dashboard.pdf`)  
+### 6. 📈 Final Project: Sales Dashboard
+**Tools:** Power BI (PDF Summary: `Final Project Dashboard.pdf`)  
 **Skills:** KPI tracking, storytelling with dashboards, visual reporting  
 **Summary:** Built an executive-level sales dashboard to visualize trends, performance by region, and sales rep effectiveness. Delivered strategic insights for leadership to improve decision-making.
 
