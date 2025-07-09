@@ -13,7 +13,7 @@ This repository showcases my core technical projects completed during the 6-mont
 
 ---
 
-### 2. 🛍 Business Analytics – E-Commerce Event Logs
+### 2. 🛍 Business Analytics – E-Commerce Business Analysis
 **Tools:** Google Sheets, Excel  
 **Skills:** Transaction log analysis, behavioral segmentation  
 **Summary:** Analyzed raw user activity logs for an e-commerce company to extract business insights from customer behavior patterns including views, cart additions, and purchases.
