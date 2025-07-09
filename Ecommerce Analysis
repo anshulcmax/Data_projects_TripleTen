@@ -1,0 +1,97 @@
+# 📊 Ecommerce Analysis Project
+
+## 🔗 Project Link
+[Google Sheets Dataset](https://docs.google.com/spreadsheets/d/1xh3PcmJ6Rnm881SDhs1s-XYjQZic7wROEX_7WgOZaMA/edit?gid=801320237#gid=801320237)
+
+## 📁 Project Structure
+```
+Ecommerce Analysis/
+├── Executive Summary
+│   ├── Results
+│   └── Analysis
+├── conversion_funnel
+├── purchase_activity
+├── first_purchase
+├── cohort_analysis
+├── retention_rates
+└── Table of Contents
+```
+
+---
+
+## 🧠 Project Goals
+Analyze user behavior and transactions on an e-commerce platform using raw event logs. Key objectives include:
+- Building a conversion funnel to evaluate user drop-off
+- Creating acquisition cohorts based on first purchase month
+- Calculating monthly cohort retention rates
+
+---
+
+## 🛠️ Steps & Sheets Breakdown
+
+### Part 1: Build a Conversion Funnel
+- **Sheet:** `conversion_funnel`
+- Source: `raw_user_activity`
+- Method: Pivot table with 3 funnel stages (e.g. product_view → add_to_cart → purchase)
+- Metrics: Unique user counts, step-to-step and total conversion rates
+
+---
+
+### Part 2: Prepare Data for Cohort Analysis
+- **Sheet:** `purchase_activity`
+- Filter only `purchase` events
+- Row count after filter: **4,845**
+
+#### Calculate First Purchase Date
+- **Sheet:** `first_purchase`
+- Method: Pivot table to get minimum `event_date` per `user_id`
+
+#### Add Date Columns
+- **In `purchase_activity`**:
+  - `event_month` using `TEXT(event_date, "YYYY-MM")`
+  - `first_purchase_month` using `TEXT(first_purchase_date, "YYYY-MM")`
+  - `cohort_age` using `DATEDIF(first_purchase_date, event_date, "M")`
+
+---
+
+### Part 3: Calculate Retention Rates
+- **Sheet:** `cohort_analysis`
+- Group by `first_purchase_month` (cohorts)
+- Columns: unique user counts per `cohort_age`
+
+- **Sheet:** `retention_rates`
+  - Cohort size in Age 0 column
+  - Formula: Retention rate = Age X / Age 0
+
+---
+
+## 📄 Executive Summary
+
+### 🔍 Results
+- Summarized key metrics:
+  - Funnel drop-off rates
+  - Retention rates across 0–4 months
+
+### 🧾 Analysis
+- Dataset: Raw logs of user events (views, carts, purchases)
+- Methods:
+  - Funnel: Based on unique user counts
+  - Cohorts: Based on first purchase month
+- Assumptions: Only purchase events used in retention; months in `YYYY-MM` format
+
+---
+
+## 🧼 Final Touches
+- Reordered sheets for clarity: `Table of Contents`, `Executive Summary`, results, then calculations
+- Applied formatting: headers bolded, freeze panes, clean formulas
+
+---
+
+## ✅ Notes
+> Use the file as a professional analyst presentation. Make it exec-ready!
+
+---
+
+Feel free to clone or fork this repository and connect to the linked spreadsheet for data validation and demo purposes.
+
+---
