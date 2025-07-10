@@ -27,7 +27,7 @@ This repository showcases my core technical projects completed during the 6-mont
 
 ---
 
-### 4. 🔄 Storytelling with Data: Returns Analysis
+### 4. 🔄 Storytelling with Data: Superstore Returns Analysis
 **Tools:** Tableau  
 **Skills:** Root cause analysis, return rate calculation, visual storytelling  
 **Summary:** Investigated the high return rate at the Superstore by analyzing customer return behavior. Built dashboards and crafted a data story to advise the CEO on reducing product returns.
